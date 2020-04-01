@@ -16,3 +16,10 @@ collections:
       - { name: title, label: Title }
       - { name: description, label: Description }
       - { name: body, label: Body, widget: markdown }
+  - label: Gallery
+    name: galleryImages
+    widget: list
+    fields: 
+      - {label: Image, name: image, widget: image}
+      - { name: title, label: Title }
+      - { name: size, label: Size }
