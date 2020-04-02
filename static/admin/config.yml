@@ -18,8 +18,15 @@ collections:
       - { name: body, label: Body, widget: markdown }
   - label: Gallery
     name: galleryImages
+    folder: content/gallery
+    create: true
     widget: list
-    fields: 
-      - {label: Image, name: image, widget: image}
-      - { name: title, label: Title }
-      - { name: size, label: Size }
+    fields:
+      - { name: galleryName, label: Gallery Name }
+      - label: Art Pieces
+        name: pieces
+        widget: list
+        fields: 
+        - { label: Image, name: image, widget: image}
+        - { name: title, label: Title }
+        - { name: size, label: Size }
