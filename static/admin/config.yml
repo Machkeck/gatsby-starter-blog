@@ -17,13 +17,13 @@ collections:
       - { name: description, label: Description }
       - { name: body, label: Body, widget: markdown }
   - label: Gallery
-    name: galleryImages
+    name: title
     identifier_field: name
     folder: content/gallery
     create: true
     widget: object
     fields:
-      - { name: galleryName, label: Gallery Name }
+      - { name: name, label: Gallery Name, identifier_field: name }
       - label: Art Pieces
         name: pieces
         identifier_field: name
@@ -32,17 +32,5 @@ collections:
         - { name: title, label: Title }  
         - { label: Image, name: image, widget: image}
         - { name: size, label: Size }
-  - label: Testimonials
-    name: testimonials
-    create: true
-    folder: content/testimonials
-    widget: list
-    fields:
-      - {label: Quote, name: quote, widget: string, default: Everything is awesome!}
-      - label: Author
-        name: author
-        widget: object
-        fields:
-          - {label: Name, name: name, widget: string}
-          - {label: Avatar, name: avatar, widget: image}
+
   
